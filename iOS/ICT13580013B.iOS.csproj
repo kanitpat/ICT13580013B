@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProjectGuid>{A67B8FC0-4D88-4E2E-9903-04DC0E00DF0F}</ProjectGuid>
+    <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>ICT13580013B.iOS</RootNamespace>
+    <AssemblyName>ICT13580013B.iOS</AssemblyName>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG;ENABLE_TEST_CLOUD;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchDebug>true</MtouchDebug>
+    <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
+    <MtouchFastDev>true</MtouchFastDev>
+    <IOSDebuggerPort>33193</IOSDebuggerPort>
+    <MtouchLink>None</MtouchLink>
+    <MtouchArch>i386, x86_64</MtouchArch>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchFloat32>true</MtouchFloat32>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
+    <MtouchLink>None</MtouchLink>
+    <MtouchArch>i386, x86_64</MtouchArch>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG;ENABLE_TEST_CLOUD;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <DeviceSpecificBuild>true</DeviceSpecificBuild>
+    <MtouchDebug>true</MtouchDebug>
+    <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
+    <MtouchFastDev>true</MtouchFastDev>
+    <MtouchFloat32>true</MtouchFloat32>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <IOSDebuggerPort>58744</IOSDebuggerPort>
+    <MtouchLink>SdkOnly</MtouchLink>
+    <MtouchArch>ARMv7, ARM64</MtouchArch>
+    <MtouchHttpClientHandler>HttpClientHandler</MtouchHttpClientHandler>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Xamarin.iOS" />
+    <Reference Include="Xamarin.Forms.Core">
+      <HintPath>..\packages\Xamarin.Forms.2.3.4.247\lib\Xamarin.iOS10\Xamarin.Forms.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Platform">
+      <HintPath>..\packages\Xamarin.Forms.2.3.4.247\lib\Xamarin.iOS10\Xamarin.Forms.Platform.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Platform.iOS">
+      <HintPath>..\packages\Xamarin.Forms.2.3.4.247\lib\Xamarin.iOS10\Xamarin.Forms.Platform.iOS.dll</HintPath>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Xaml">
+      <HintPath>..\packages\Xamarin.Forms.2.3.4.247\lib\Xamarin.iOS10\Xamarin.Forms.Xaml.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ICT13580013B\ICT13580013B.csproj">
+      <Project>{2D1B401B-4EF0-4483-9566-CBE36834CF5D}</Project>
+      <Name>ICT13580013B</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\Contents.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterfaceDefinition Include="LaunchScreen.storyboard" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Info.plist" />
+    <None Include="Entitlements.plist" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\airdrop%403x.png" />
+    <BundleResource Include="Resources\alarms%403x.png" />
+    <BundleResource Include="Resources\albums%403x.png" />
+    <BundleResource Include="Resources\anchor%403x.png" />
+    <BundleResource Include="Resources\approximately%403x.png" />
+    <BundleResource Include="Resources\archery_target%403x.png" />
+    <BundleResource Include="Resources\arrows_in%403x.png" />
+    <BundleResource Include="Resources\at%403x.png" />
+    <BundleResource Include="Resources\bath_shower%403x.png" />
+    <BundleResource Include="Resources\bathroom_cabinet%403x.png" />
+    <BundleResource Include="Resources\bluetooth%403x.png" />
+    <BundleResource Include="Resources\bookmarks%403x.png" />
+    <BundleResource Include="Resources\browsers%403x.png" />
+    <BundleResource Include="Resources\candy_cane%403x.png" />
+    <BundleResource Include="Resources\chat%403x.png" />
+    <BundleResource Include="Resources\coin_dollar%403x.png" />
+    <BundleResource Include="Resources\contacts%403x.png" />
+    <BundleResource Include="Resources\controls_forward%403x.png" />
+    <BundleResource Include="Resources\divide%403x.png" />
+    <BundleResource Include="Resources\double_bed%403x.png" />
+    <BundleResource Include="Resources\download%403x.png" />
+    <BundleResource Include="Resources\favorites%403x.png" />
+    <BundleResource Include="Resources\file_attach%403x.png" />
+    <BundleResource Include="Resources\file_data%403x.png" />
+    <BundleResource Include="Resources\file_divider%403x.png" />
+    <BundleResource Include="Resources\file_edit%403x.png" />
+    <BundleResource Include="Resources\file_jpg%403x.png" />
+    <BundleResource Include="Resources\file_mp3%403x.png" />
+    <BundleResource Include="Resources\file_upload%403x.png" />
+    <BundleResource Include="Resources\films%403x.png" />
+    <BundleResource Include="Resources\flags%403x.png" />
+    <BundleResource Include="Resources\floor_lamp%403x.png" />
+    <BundleResource Include="Resources\folder_music%403x.png" />
+    <BundleResource Include="Resources\folder_search%403x.png" />
+    <BundleResource Include="Resources\folder_settings%403x.png" />
+    <BundleResource Include="Resources\folder%403x.png" />
+    <BundleResource Include="Resources\gift%403x.png" />
+    <BundleResource Include="Resources\ice_cream_sprinkles%403x.png" />
+    <BundleResource Include="Resources\iphone_calibrate%403x.png" />
+    <BundleResource Include="Resources\ipod_headphones%403x.png" />
+    <BundleResource Include="Resources\keypad%403x.png" />
+    <BundleResource Include="Resources\layers_2%403x.png" />
+    <BundleResource Include="Resources\layers%403x.png" />
+    <BundleResource Include="Resources\loop%403x.png" />
+    <BundleResource Include="Resources\mac%403x.png" />
+    <BundleResource Include="Resources\map_pin_angle_3%403x.png" />
+    <BundleResource Include="Resources\map_pin_distance_3%403x.png" />
+    <BundleResource Include="Resources\messages%403x.png" />
+    <BundleResource Include="Resources\mobile_signal%403x.png" />
+    <BundleResource Include="Resources\more%403x.png" />
+    <BundleResource Include="Resources\music_note%403x.png" />
+    <BundleResource Include="Resources\near%403x.png" />
+    <BundleResource Include="Resources\net_line%403x.png" />
+    <BundleResource Include="Resources\new%403x.png" />
+    <BundleResource Include="Resources\next%403x.png" />
+    <BundleResource Include="Resources\note_dollar%403x.png" />
+    <BundleResource Include="Resources\notebook%403x.png" />
+    <BundleResource Include="Resources\office_chair%403x.png" />
+    <BundleResource Include="Resources\percentage%403x.png" />
+    <BundleResource Include="Resources\photos%403x.png" />
+    <BundleResource Include="Resources\pic_fields_albums%403x.png" />
+    <BundleResource Include="Resources\pic_ios%403x.png" />
+    <BundleResource Include="Resources\playlists%403x.png" />
+    <BundleResource Include="Resources\plus_minus%403x.png" />
+    <BundleResource Include="Resources\previous%403x.png" />
+    <BundleResource Include="Resources\reading%403x.png" />
+    <BundleResource Include="Resources\recents%403x.png" />
+    <BundleResource Include="Resources\repeat%403x.png" />
+    <BundleResource Include="Resources\reply%403x.png" />
+    <BundleResource Include="Resources\ruler_pencil%403x.png" />
+    <BundleResource Include="Resources\running%403x.png" />
+    <BundleResource Include="Resources\search%403x.png" />
+    <BundleResource Include="Resources\shop_basket_love%403x.png" />
+    <BundleResource Include="Resources\side_drawers%403x.png" />
+    <BundleResource Include="Resources\signpost%403x.png" />
+    <BundleResource Include="Resources\signposts%403x.png" />
+    <BundleResource Include="Resources\sliders_up_2%403x.png" />
+    <BundleResource Include="Resources\soccer_ball%403x.png" />
+    <BundleResource Include="Resources\stop_watch%403x.png" />
+    <BundleResource Include="Resources\suitcase%403x.png" />
+    <BundleResource Include="Resources\surfer%403x.png" />
+    <BundleResource Include="Resources\syncing%403x.png" />
+    <BundleResource Include="Resources\tag%403x.png" />
+    <BundleResource Include="Resources\tea_cup%403x.png" />
+    <BundleResource Include="Resources\telephone_signal%403x.png" />
+    <BundleResource Include="Resources\television%403x.png" />
+    <BundleResource Include="Resources\timer%403x.png" />
+    <BundleResource Include="Resources\top_charts%403x.png" />
+    <BundleResource Include="Resources\trash%403x.png" />
+    <BundleResource Include="Resources\ui_code%403x.png" />
+    <BundleResource Include="Resources\upload%403x.png" />
+    <BundleResource Include="Resources\user_chat%403x.png" />
+    <BundleResource Include="Resources\user_warning_2%403x.png" />
+    <BundleResource Include="Resources\users_three_2%403x.png" />
+    <BundleResource Include="Resources\users_three_switch%403x.png" />
+    <BundleResource Include="Resources\venn_diagram%403x.png" />
+    <BundleResource Include="Resources\vertical_arrows%403x.png" />
+    <BundleResource Include="Resources\wine_glass_angle%403x.png" />
+    <BundleResource Include="Resources\woman%403x.png" />
+    <BundleResource Include="Resources\world_times%403x.png" />
+    <BundleResource Include="Resources\airdrop.png" />
+    <BundleResource Include="Resources\alarms.png" />
+    <BundleResource Include="Resources\albums.png" />
+    <BundleResource Include="Resources\anchor.png" />
+    <BundleResource Include="Resources\approximately.png" />
+    <BundleResource Include="Resources\archery_target.png" />
+    <BundleResource Include="Resources\arrows_in.png" />
+    <BundleResource Include="Resources\at.png" />
+    <BundleResource Include="Resources\bath_shower.png" />
+    <BundleResource Include="Resources\bathroom_cabinet.png" />
+    <BundleResource Include="Resources\bluetooth.png" />
+    <BundleResource Include="Resources\bookmarks.png" />
+    <BundleResource Include="Resources\browsers.png" />
+    <BundleResource Include="Resources\candy_cane.png" />
+    <BundleResource Include="Resources\chat.png" />
+    <BundleResource Include="Resources\coin_dollar.png" />
+    <BundleResource Include="Resources\contacts.png" />
+    <BundleResource Include="Resources\controls_forward.png" />
+    <BundleResource Include="Resources\divide.png" />
+    <BundleResource Include="Resources\double_bed.png" />
+    <BundleResource Include="Resources\download.png" />
+    <BundleResource Include="Resources\favorites.png" />
+    <BundleResource Include="Resources\file_attach.png" />
+    <BundleResource Include="Resources\file_data.png" />
+    <BundleResource Include="Resources\file_divider.png" />
+    <BundleResource Include="Resources\file_edit.png" />
+    <BundleResource Include="Resources\file_jpg.png" />
+    <BundleResource Include="Resources\file_mp3.png" />
+    <BundleResource Include="Resources\file_upload.png" />
+    <BundleResource Include="Resources\films.png" />
+    <BundleResource Include="Resources\flags.png" />
+    <BundleResource Include="Resources\floor_lamp.png" />
+    <BundleResource Include="Resources\folder_music.png" />
+    <BundleResource Include="Resources\folder_search.png" />
+    <BundleResource Include="Resources\folder_settings.png" />
+    <BundleResource Include="Resources\folder.png" />
+    <BundleResource Include="Resources\gift.png" />
+    <BundleResource Include="Resources\ice_cream_sprinkles.png" />
+    <BundleResource Include="Resources\iphone_calibrate.png" />
+    <BundleResource Include="Resources\ipod_headphones.png" />
+    <BundleResource Include="Resources\keypad.png" />
+    <BundleResource Include="Resources\layers_2.png" />
+    <BundleResource Include="Resources\layers.png" />
+    <BundleResource Include="Resources\loop.png" />
+    <BundleResource Include="Resources\mac.png" />
+    <BundleResource Include="Resources\map_pin_angle_3.png" />
+    <BundleResource Include="Resources\map_pin_distance_3.png" />
+    <BundleResource Include="Resources\messages.png" />
+    <BundleResource Include="Resources\mobile_signal.png" />
+    <BundleResource Include="Resources\more.png" />
+    <BundleResource Include="Resources\music_note.png" />
+    <BundleResource Include="Resources\near.png" />
+    <BundleResource Include="Resources\net_line.png" />
+    <BundleResource Include="Resources\new.png" />
+    <BundleResource Include="Resources\next.png" />
+    <BundleResource Include="Resources\note_dollar.png" />
+    <BundleResource Include="Resources\notebook.png" />
+    <BundleResource Include="Resources\office_chair.png" />
+    <BundleResource Include="Resources\percentage.png" />
+    <BundleResource Include="Resources\photos.png" />
+    <BundleResource Include="Resources\pic_fields_albums.png" />
+    <BundleResource Include="Resources\pic_ios.png" />
+    <BundleResource Include="Resources\playlists.png" />
+    <BundleResource Include="Resources\plus_minus.png" />
+    <BundleResource Include="Resources\previous.png" />
+    <BundleResource Include="Resources\reading.png" />
+    <BundleResource Include="Resources\recents.png" />
+    <BundleResource Include="Resources\repeat.png" />
+    <BundleResource Include="Resources\reply.png" />
+    <BundleResource Include="Resources\ruler_pencil.png" />
+    <BundleResource Include="Resources\running.png" />
+    <BundleResource Include="Resources\search.png" />
+    <BundleResource Include="Resources\shop_basket_love.png" />
+    <BundleResource Include="Resources\side_drawers.png" />
+    <BundleResource Include="Resources\signpost.png" />
+    <BundleResource Include="Resources\signposts.png" />
+    <BundleResource Include="Resources\sliders_up_2.png" />
+    <BundleResource Include="Resources\soccer_ball.png" />
+    <BundleResource Include="Resources\stop_watch.png" />
+    <BundleResource Include="Resources\suitcase.png" />
+    <BundleResource Include="Resources\surfer.png" />
+    <BundleResource Include="Resources\syncing.png" />
+    <BundleResource Include="Resources\tag.png" />
+    <BundleResource Include="Resources\tea_cup.png" />
+    <BundleResource Include="Resources\telephone_signal.png" />
+    <BundleResource Include="Resources\television.png" />
+    <BundleResource Include="Resources\timer.png" />
+    <BundleResource Include="Resources\top_charts.png" />
+    <BundleResource Include="Resources\trash.png" />
+    <BundleResource Include="Resources\ui_code.png" />
+    <BundleResource Include="Resources\upload.png" />
+    <BundleResource Include="Resources\user_chat.png" />
+    <BundleResource Include="Resources\user_warning_2.png" />
+    <BundleResource Include="Resources\users_three_2.png" />
+    <BundleResource Include="Resources\users_three_switch.png" />
+    <BundleResource Include="Resources\venn_diagram.png" />
+    <BundleResource Include="Resources\vertical_arrows.png" />
+    <BundleResource Include="Resources\wine_glass_angle.png" />
+    <BundleResource Include="Resources\woman.png" />
+    <BundleResource Include="Resources\world_times.png" />
+    <BundleResource Include="Resources\airdrop%402x.png" />
+    <BundleResource Include="Resources\alarms%402x.png" />
+    <BundleResource Include="Resources\albums%402x.png" />
+    <BundleResource Include="Resources\anchor%402x.png" />
+    <BundleResource Include="Resources\approximately%402x.png" />
+    <BundleResource Include="Resources\archery_target%402x.png" />
+    <BundleResource Include="Resources\arrows_in%402x.png" />
+    <BundleResource Include="Resources\at%402x.png" />
+    <BundleResource Include="Resources\bath_shower%402x.png" />
+    <BundleResource Include="Resources\bathroom_cabinet%402x.png" />
+    <BundleResource Include="Resources\bluetooth%402x.png" />
+    <BundleResource Include="Resources\bookmarks%402x.png" />
+    <BundleResource Include="Resources\browsers%402x.png" />
+    <BundleResource Include="Resources\candy_cane%402x.png" />
+    <BundleResource Include="Resources\chat%402x.png" />
+    <BundleResource Include="Resources\coin_dollar%402x.png" />
+    <BundleResource Include="Resources\contacts%402x.png" />
+    <BundleResource Include="Resources\controls_forward%402x.png" />
+    <BundleResource Include="Resources\divide%402x.png" />
+    <BundleResource Include="Resources\double_bed%402x.png" />
+    <BundleResource Include="Resources\download%402x.png" />
+    <BundleResource Include="Resources\favorites%402x.png" />
+    <BundleResource Include="Resources\file_attach%402x.png" />
+    <BundleResource Include="Resources\file_data%402x.png" />
+    <BundleResource Include="Resources\file_divider%402x.png" />
+    <BundleResource Include="Resources\file_edit%402x.png" />
+    <BundleResource Include="Resources\file_jpg%402x.png" />
+    <BundleResource Include="Resources\file_mp3%402x.png" />
+    <BundleResource Include="Resources\file_upload%402x.png" />
+    <BundleResource Include="Resources\films%402x.png" />
+    <BundleResource Include="Resources\flags%402x.png" />
+    <BundleResource Include="Resources\floor_lamp%402x.png" />
+    <BundleResource Include="Resources\folder_music%402x.png" />
+    <BundleResource Include="Resources\folder_search%402x.png" />
+    <BundleResource Include="Resources\folder_settings%402x.png" />
+    <BundleResource Include="Resources\folder%402x.png" />
+    <BundleResource Include="Resources\gift%402x.png" />
+    <BundleResource Include="Resources\ice_cream_sprinkles%402x.png" />
+    <BundleResource Include="Resources\iphone_calibrate%402x.png" />
+    <BundleResource Include="Resources\ipod_headphones%402x.png" />
+    <BundleResource Include="Resources\keypad%402x.png" />
+    <BundleResource Include="Resources\layers_2%402x.png" />
+    <BundleResource Include="Resources\layers%402x.png" />
+    <BundleResource Include="Resources\loop%402x.png" />
+    <BundleResource Include="Resources\mac%402x.png" />
+    <BundleResource Include="Resources\map_pin_angle_3%402x.png" />
+    <BundleResource Include="Resources\map_pin_distance_3%402x.png" />
+    <BundleResource Include="Resources\messages%402x.png" />
+    <BundleResource Include="Resources\mobile_signal%402x.png" />
+    <BundleResource Include="Resources\more%402x.png" />
+    <BundleResource Include="Resources\music_note%402x.png" />
+    <BundleResource Include="Resources\near%402x.png" />
+    <BundleResource Include="Resources\net_line%402x.png" />
+    <BundleResource Include="Resources\new%402x.png" />
+    <BundleResource Include="Resources\next%402x.png" />
+    <BundleResource Include="Resources\note_dollar%402x.png" />
+    <BundleResource Include="Resources\notebook%402x.png" />
+    <BundleResource Include="Resources\office_chair%402x.png" />
+    <BundleResource Include="Resources\percentage%402x.png" />
+    <BundleResource Include="Resources\photos%402x.png" />
+    <BundleResource Include="Resources\pic_fields_albums%402x.png" />
+    <BundleResource Include="Resources\pic_ios%402x.png" />
+    <BundleResource Include="Resources\playlists%402x.png" />
+    <BundleResource Include="Resources\plus_minus%402x.png" />
+    <BundleResource Include="Resources\previous%402x.png" />
+    <BundleResource Include="Resources\reading%402x.png" />
+    <BundleResource Include="Resources\recents%402x.png" />
+    <BundleResource Include="Resources\repeat%402x.png" />
+    <BundleResource Include="Resources\reply%402x.png" />
+    <BundleResource Include="Resources\ruler_pencil%402x.png" />
+    <BundleResource Include="Resources\running%402x.png" />
+    <BundleResource Include="Resources\search%402x.png" />
+    <BundleResource Include="Resources\shop_basket_love%402x.png" />
+    <BundleResource Include="Resources\side_drawers%402x.png" />
+    <BundleResource Include="Resources\signpost%402x.png" />
+    <BundleResource Include="Resources\signposts%402x.png" />
+    <BundleResource Include="Resources\sliders_up_2%402x.png" />
+    <BundleResource Include="Resources\soccer_ball%402x.png" />
+    <BundleResource Include="Resources\stop_watch%402x.png" />
+    <BundleResource Include="Resources\suitcase%402x.png" />
+    <BundleResource Include="Resources\surfer%402x.png" />
+    <BundleResource Include="Resources\syncing%402x.png" />
+    <BundleResource Include="Resources\tag%402x.png" />
+    <BundleResource Include="Resources\tea_cup%402x.png" />
+    <BundleResource Include="Resources\telephone_signal%402x.png" />
+    <BundleResource Include="Resources\television%402x.png" />
+    <BundleResource Include="Resources\timer%402x.png" />
+    <BundleResource Include="Resources\top_charts%402x.png" />
+    <BundleResource Include="Resources\trash%402x.png" />
+    <BundleResource Include="Resources\ui_code%402x.png" />
+    <BundleResource Include="Resources\upload%402x.png" />
+    <BundleResource Include="Resources\user_chat%402x.png" />
+    <BundleResource Include="Resources\user_warning_2%402x.png" />
+    <BundleResource Include="Resources\users_three_2%402x.png" />
+    <BundleResource Include="Resources\users_three_switch%402x.png" />
+    <BundleResource Include="Resources\venn_diagram%402x.png" />
+    <BundleResource Include="Resources\vertical_arrows%402x.png" />
+    <BundleResource Include="Resources\wine_glass_angle%402x.png" />
+    <BundleResource Include="Resources\woman%402x.png" />
+    <BundleResource Include="Resources\world_times%402x.png" />
+    <BundleResource Include="Resources\icons8.png" />
+    <BundleResource Include="Resources\mio.jpeg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
+  <Import Project="..\packages\Xamarin.Forms.2.3.4.247\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.2.3.4.247\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets')" />
+</Project>

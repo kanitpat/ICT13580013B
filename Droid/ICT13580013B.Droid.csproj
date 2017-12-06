@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{41ECB01C-5533-48EC-A279-F2FF83A5C298}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>ICT13580013B.Droid</RootNamespace>
+    <AssemblyName>ICT13580013B.Droid</AssemblyName>
+    <AndroidApplication>True</AndroidApplication>
+    <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
+    <AndroidResgenClass>Resource</AndroidResgenClass>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+    <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
+    <AndroidUseLatestPlatformSdk>true</AndroidUseLatestPlatformSdk>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidLinkMode>None</AndroidLinkMode>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidManagedSymbols>true</AndroidManagedSymbols>
+    <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Mono.Android" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ICT13580013B\ICT13580013B.csproj">
+      <Project>{2D1B401B-4EF0-4483-9566-CBE36834CF5D}</Project>
+      <Name>ICT13580013B</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MainActivity.cs" />
+    <Compile Include="Resources\Resource.designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AboutResources.txt" />
+    <None Include="Properties\AndroidManifest.xml" />
+    <None Include="Assets\AboutAssets.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\Tabbar.axml" />
+    <AndroidResource Include="Resources\layout\Toolbar.axml" />
+    <AndroidResource Include="Resources\values\styles.xml" />
+    <AndroidResource Include="Resources\drawable-hdpi\icon.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\icon.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\icon.png" />
+    <AndroidResource Include="Resources\drawable\airdrop.png" />
+    <AndroidResource Include="Resources\drawable\alarms.png" />
+    <AndroidResource Include="Resources\drawable\albums.png" />
+    <AndroidResource Include="Resources\drawable\anchor.png" />
+    <AndroidResource Include="Resources\drawable\approximately.png" />
+    <AndroidResource Include="Resources\drawable\archery_target.png" />
+    <AndroidResource Include="Resources\drawable\arrows_in.png" />
+    <AndroidResource Include="Resources\drawable\at.png" />
+    <AndroidResource Include="Resources\drawable\bath_shower.png" />
+    <AndroidResource Include="Resources\drawable\bathroom_cabinet.png" />
+    <AndroidResource Include="Resources\drawable\bluetooth.png" />
+    <AndroidResource Include="Resources\drawable\bookmarks.png" />
+    <AndroidResource Include="Resources\drawable\browsers.png" />
+    <AndroidResource Include="Resources\drawable\candy_cane.png" />
+    <AndroidResource Include="Resources\drawable\chat.png" />
+    <AndroidResource Include="Resources\drawable\coin_dollar.png" />
+    <AndroidResource Include="Resources\drawable\contacts.png" />
+    <AndroidResource Include="Resources\drawable\controls_forward.png" />
+    <AndroidResource Include="Resources\drawable\divide.png" />
+    <AndroidResource Include="Resources\drawable\double_bed.png" />
+    <AndroidResource Include="Resources\drawable\download.png" />
+    <AndroidResource Include="Resources\drawable\favorites.png" />
+    <AndroidResource Include="Resources\drawable\file_attach.png" />
+    <AndroidResource Include="Resources\drawable\file_data.png" />
+    <AndroidResource Include="Resources\drawable\file_divider.png" />
+    <AndroidResource Include="Resources\drawable\file_edit.png" />
+    <AndroidResource Include="Resources\drawable\file_jpg.png" />
+    <AndroidResource Include="Resources\drawable\file_mp3.png" />
+    <AndroidResource Include="Resources\drawable\file_upload.png" />
+    <AndroidResource Include="Resources\drawable\films.png" />
+    <AndroidResource Include="Resources\drawable\flags.png" />
+    <AndroidResource Include="Resources\drawable\floor_lamp.png" />
+    <AndroidResource Include="Resources\drawable\folder_music.png" />
+    <AndroidResource Include="Resources\drawable\folder_search.png" />
+    <AndroidResource Include="Resources\drawable\folder_settings.png" />
+    <AndroidResource Include="Resources\drawable\folder.png" />
+    <AndroidResource Include="Resources\drawable\gift.png" />
+    <AndroidResource Include="Resources\drawable\ice_cream_sprinkles.png" />
+    <AndroidResource Include="Resources\drawable\iphone_calibrate.png" />
+    <AndroidResource Include="Resources\drawable\ipod_headphones.png" />
+    <AndroidResource Include="Resources\drawable\keypad.png" />
+    <AndroidResource Include="Resources\drawable\layers_2.png" />
+    <AndroidResource Include="Resources\drawable\layers.png" />
+    <AndroidResource Include="Resources\drawable\loop.png" />
+    <AndroidResource Include="Resources\drawable\mac.png" />
+    <AndroidResource Include="Resources\drawable\map_pin_angle_3.png" />
+    <AndroidResource Include="Resources\drawable\map_pin_distance_3.png" />
+    <AndroidResource Include="Resources\drawable\messages.png" />
+    <AndroidResource Include="Resources\drawable\mobile_signal.png" />
+    <AndroidResource Include="Resources\drawable\more.png" />
+    <AndroidResource Include="Resources\drawable\music_note.png" />
+    <AndroidResource Include="Resources\drawable\near.png" />
+    <AndroidResource Include="Resources\drawable\net_line.png" />
+    <AndroidResource Include="Resources\drawable\new.png" />
+    <AndroidResource Include="Resources\drawable\next.png" />
+    <AndroidResource Include="Resources\drawable\note_dollar.png" />
+    <AndroidResource Include="Resources\drawable\notebook.png" />
+    <AndroidResource Include="Resources\drawable\office_chair.png" />
+    <AndroidResource Include="Resources\drawable\percentage.png" />
+    <AndroidResource Include="Resources\drawable\photos.png" />
+    <AndroidResource Include="Resources\drawable\pic_fields_albums.png" />
+    <AndroidResource Include="Resources\drawable\pic_ios.png" />
+    <AndroidResource Include="Resources\drawable\playlists.png" />
+    <AndroidResource Include="Resources\drawable\plus_minus.png" />
+    <AndroidResource Include="Resources\drawable\previous.png" />
+    <AndroidResource Include="Resources\drawable\reading.png" />
+    <AndroidResource Include="Resources\drawable\recents.png" />
+    <AndroidResource Include="Resources\drawable\repeat.png" />
+    <AndroidResource Include="Resources\drawable\reply.png" />
+    <AndroidResource Include="Resources\drawable\ruler_pencil.png" />
+    <AndroidResource Include="Resources\drawable\running.png" />
+    <AndroidResource Include="Resources\drawable\search.png" />
+    <AndroidResource Include="Resources\drawable\shop_basket_love.png" />
+    <AndroidResource Include="Resources\drawable\side_drawers.png" />
+    <AndroidResource Include="Resources\drawable\signpost.png" />
+    <AndroidResource Include="Resources\drawable\signposts.png" />
+    <AndroidResource Include="Resources\drawable\sliders_up_2.png" />
+    <AndroidResource Include="Resources\drawable\soccer_ball.png" />
+    <AndroidResource Include="Resources\drawable\stop_watch.png" />
+    <AndroidResource Include="Resources\drawable\suitcase.png" />
+    <AndroidResource Include="Resources\drawable\surfer.png" />
+    <AndroidResource Include="Resources\drawable\syncing.png" />
+    <AndroidResource Include="Resources\drawable\tag.png" />
+    <AndroidResource Include="Resources\drawable\tea_cup.png" />
+    <AndroidResource Include="Resources\drawable\telephone_signal.png" />
+    <AndroidResource Include="Resources\drawable\television.png" />
+    <AndroidResource Include="Resources\drawable\timer.png" />
+    <AndroidResource Include="Resources\drawable\top_charts.png" />
+    <AndroidResource Include="Resources\drawable\trash.png" />
+    <AndroidResource Include="Resources\drawable\ui_code.png" />
+    <AndroidResource Include="Resources\drawable\upload.png" />
+    <AndroidResource Include="Resources\drawable\user_chat.png" />
+    <AndroidResource Include="Resources\drawable\user_warning_2.png" />
+    <AndroidResource Include="Resources\drawable\users_three_2.png" />
+    <AndroidResource Include="Resources\drawable\users_three_switch.png" />
+    <AndroidResource Include="Resources\drawable\venn_diagram.png" />
+    <AndroidResource Include="Resources\drawable\vertical_arrows.png" />
+    <AndroidResource Include="Resources\drawable\wine_glass_angle.png" />
+    <AndroidResource Include="Resources\drawable\woman.png" />
+    <AndroidResource Include="Resources\drawable\world_times.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\drawable\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+</Project>
